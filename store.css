@@ -1,0 +1,631 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+::selection{
+    background-color: #e3b375;
+    color: white;
+}
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+}
+/*container*/
+.grid-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color:white;
+    width: 100%;
+    justify-content: space-between;
+    height: 70px;
+    position: sticky;
+    top:0;
+}
+/*block1*/
+.grid-container img{
+    width: 40px;
+    height: 40px;
+    transform: translateY(20%);
+}
+/*block2*/
+.nav{
+    display: flex;
+    background-color:white;
+    position: relative;
+    width: 630px;
+}
+.nav a{
+    text-decoration: none;
+    color:black;
+    padding-left: 20px;
+    margin-right: 20px;
+    margin-top: 25px;
+}
+/*block2*/
+.btn{
+    flex-shrink: 0;
+    margin-top: 16px;  
+    cursor: pointer;
+    flex-basis: 140px;
+    margin-bottom: 14px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(183, 238, 74);
+    padding: 8px;
+    color: black;
+}
+.icon {
+    margin-top: 25px;
+}
+.aero-links{
+    position: absolute;
+    background-color: white;
+    display:none;
+    border-top: 4px solid green;
+    width: 200px;
+    box-shadow:2px 2px 10px rgba(0,0,0,0.4);
+}
+.aero-links a{
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    display: block; 
+    width: 200px;
+    margin-top: 0;
+    padding: 10px 0;
+}
+.aero-links a:hover{
+    background-color: rgba(0,0,0,0.4);
+}
+.nav .icon:hover .aero-links{
+    display: block;
+}
+/*section two*/
+.back{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 700px;
+    background-image: url("https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png");
+    background-repeat: no-repeat;
+    object-fit: contain;
+    z-index: -1;
+}
+/*icons section*/
+.icons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    width: 100%;
+    text-align: center;
+}
+.icons h2{
+    color: white;
+    font-weight: bolder;
+}
+.icons p{
+    color: white;
+}
+/*icon i section*/
+.icons i{
+    color: white;
+    font-size: 90px;
+    transition: all .2s;
+    transition-duration: .2s;
+    transition-timing-function: linear;
+}
+/*icons 1234 section*/
+.icon1{
+    background-color: #5acda6;
+    flex: 25%;
+    height: 600px;
+    padding: 80px 50px;
+}
+.icon1:hover i{
+    transform: scale(1.1,1.1);
+}
+.icon2{
+    background-color: #91ac41;
+    flex: 25%;
+    height: 600px;
+    padding: 80px 50px;
+}
+.icon2:hover i{
+    transform: scale(1.1,1.1);
+}
+.icon3{
+    background-color: #e4b476;
+    flex: 25%;
+    height: 600px;
+    padding: 80px 50px;
+}
+.icon3:hover i{
+    transform: scale(1.1,1.1);
+}
+.icon4{
+    background-color:  #f69dad;
+    flex: 25%;
+    height: 600px;
+    padding: 80px 50px;
+}
+.icon4:hover i{
+    transform: scale(1.1,1.1);
+}
+/*another icon section*/
+.text-wrapper{
+    background-color: lightblue;
+    justify-content: center;
+    text-align: center;
+    margin-top: -24px;
+    padding-top: 70px;
+}
+.text-wrapper h5{
+    font-family: 'Caveat', cursive;
+    font-size: 25px;
+    color: forestgreen;
+}
+/*container*/
+.details{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: lightblue;
+    justify-content: stretch;
+    text-align: center;
+    margin-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/*icon section*/
+.icon-cam i{
+    color: white;
+    padding: 30px;
+    border-radius: 58px;
+    font-size: 60px;
+    background-color: #e3b375;
+}
+.icon-roc i{
+    color: white;
+    padding: 30px;
+    border-radius: 58px;
+    font-size: 60px;
+    background-color: #e3b375;
+}
+.icon-twi i{
+    color: white;
+    padding: 30px;
+    border-radius: 58px;
+    font-size: 60px;
+    background-color: #e3b375;
+}
+.icon-w i{
+    color: white;
+    padding: 30px;
+    border-radius: 58px;
+    font-size: 60px;
+    background-color: #e3b375;
+}
+.icon-cam{
+    flex: 25%;
+    background-color:lightblue;
+    transition: all 1s;
+    transition-duration: 1s;
+}
+.icon-cam i:hover{
+    transform: scale(1.1,1.1);
+}
+.icon-roc{
+    flex: 25%;
+    background-color: lightblue;
+    transition: all 1s;
+    transition-duration: 1s;
+}
+.icon-roc i:hover{
+    transform: scale(1.1,1.1);
+}
+.icon-twi{
+    flex: 25%;
+    background-color: lightblue;
+    transition: all 1s;
+    transition-duration: 1s;
+}
+.icon-twi i:hover{
+    transform: scale(1.1,1.1);
+}
+.icon-w{
+    flex: 25%;
+    background-color: lightblue;
+    transition: all 1s;
+    transition-duration: 1s;
+}
+.icon-w i:hover{
+    transform: scale(1.1,1.1);
+}
+/*cooker experts*/
+.cook{
+    margin-top: 50px;
+}
+.cookers{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.cook h5{
+    justify-content: center;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: 25px;
+    color: forestgreen;
+}
+.cook h3{
+    text-align: center;
+    justify-content: center;
+}
+.cook h2{
+    text-align: center;
+    justify-content: center;
+}
+/*cookers*/
+.nazriya{
+    width:350px;
+    background-color:rgba(173, 216, 230,0.4);
+    border-top-right-radius:50px;
+    padding-top: 30px;
+    border-bottom-left-radius:25px;
+    border-bottom-right-radius:25px;
+    border-top-left-radius:25px;
+    text-align:center;
+}
+.nazriya:hover{
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+}
+.nazriya img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+.ronaldo{
+    width: 350px;
+    background-color:rgba(173, 216, 230,0.4);
+    border-top-right-radius: 50px;
+    padding-top: 30px;
+    border-bottom-left-radius:25px;
+    border-bottom-right-radius:25px;
+    border-top-left-radius:25px;
+    text-align:center;
+}
+.ronaldo:hover{
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+}
+.ronaldo img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50px;
+    object-position: 100% 100%;
+}
+.ritu{
+    padding-top: 30px;
+    width: 350px;
+    background-color:rgba(173, 216, 230,0.4);
+    border-top-right-radius: 50px;
+    border-bottom-left-radius:25px;
+    border-bottom-right-radius:25px;
+    border-top-left-radius:25px;
+    text-align:center;
+}
+.ritu:hover{
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+}
+.ritu img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+/*strawberrry section*/
+.straw-container{
+    margin-top: 30px;
+}
+.straw{
+    justify-content: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:center;
+}
+.image{
+    background-color: #e3b375;
+    width: 800px;
+}
+.image img{
+    width: 800px;
+    height: 600px;
+    object-fit: cover;
+}
+.small-form{
+    width: 400px;
+    text-align: center;
+    background-image: url("https://edyoda.s3.ap-south-1.amazonaws.com/public/strawberry-white.png");
+    background-size: 500px 600px;
+    background-repeat: no-repeat;
+}
+.small-form input[type="email"]{
+    background-color: white;
+    color: rgba(0,0,0,0.4);
+    border: none;
+    outline: none;
+    width: 200px;
+    height: 50px;
+}
+.small-form input[placeholder="Your mail"]{
+    color: rgba(0,0,0,0.4);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+}
+.small-form input[type="submit"]{
+    border: none;
+    width: 150px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    height: 50px;
+    font-size: 15px;
+}
+.small-form input[type="submit"]:hover{
+    border: 1px solid black;
+    background-color: transparent;
+    color: black;
+}
+/*follow section*/
+.followers{
+    margin-top: 40px;
+}
+.follow{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.one{
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+}
+.two{
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+}
+.three{
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+}
+.four{
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+}
+/*vedio section*/
+.video-container{
+    margin-top: 50px;
+}
+.video-wrapper{
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 1100%;
+    margin: 0 auto;
+}
+/*address section*/
+.address{
+    margin-top: 30px;
+}
+.add-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.add1{
+    width: 500px;
+    text-align: justify;
+}
+.add2{
+    width: 500px;
+    text-align: justify;
+}
+/*form section*/
+form input[type="text"]{
+    width: 100%;
+    border: 2px solid lightblue;
+    outline: none;
+    height: 50px;
+    border-radius: 14px;
+}
+form input[placeholder="name"]{
+    font-size: 20px;
+    padding-left: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+form input[type="number"]{
+    width: 100%;
+    border: 2px solid lightblue;
+    outline: none;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 18px;
+}
+form input[placeholder="number" ]{
+    font-size: 20px;
+    padding-left: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+form input[type="email"]{
+    width: 100%;
+    border: 2px solid lightblue;
+    outline: none;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 18px;
+}
+form input[placeholder="email"]{
+    font-size: 20px;
+    padding-left: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+textarea{
+    width: 500px;
+    margin-top: 20px;
+    border: 2px solid lightblue;
+    border-radius: 18px;
+    outline: none;
+}
+textarea[placeholder="messege"]{
+    font-size: 20px;
+    padding-left: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+form input[type="submit"]{
+    width: 30%;
+    border: none;
+    background-color: rgb(170, 210, 54);
+    color: white;
+    height: 50px;
+    margin-top: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+form input[type="submit"]:hover{
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+}
+
+/*meadia quries section*/
+@media screen and (max-width:700px){
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .nav a{
+        display:none;
+        justify-content: space-between;
+    }
+    .nav{
+        justify-content: space-between;
+        width: 100px;
+        margin-right: 100px;
+    }
+    .btn{
+        margin-right: 50px;
+    }
+    .icon-cam{
+        flex: 100%;
+    }
+    .icon-roc{
+        flex: 100%;
+    }
+    .icon-twi{
+        flex: 100%;
+    }
+    .icon-w{
+        flex: 100%;
+    }
+    .details{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .cook{
+        display: flex;
+        flex-direction: column;
+    }
+    .cookers{
+        flex-direction: row;
+    }
+    .nazriya{
+        width: 100%;
+    }
+    .ritu{
+        width: 100%;
+    }
+    .ronaldo{
+        width: 100%;
+    }
+    .straw{
+        display: flex;
+        flex-direction: column;
+    }
+    .image{
+        width: 100%;
+    }
+    .image img{
+        width: 100%;
+    }
+    .small-form{
+        width: 100%;
+        text-align: center;
+        background-image: url("https://edyoda.s3.ap-south-1.amazonaws.com/public/strawberry-white.png");
+        background-size: 100% 600px;
+        background-repeat: no-repeat;
+    }
+    textarea{
+        width: 50%;
+    }
+    .follow{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .one{
+        margin: auto;
+        width: 100%;
+    }
+    .two{
+        margin: auto;
+        width: 100%;
+    }
+    .three{
+        margin: auto;
+        width: 100%;
+    }
+    .four{
+        margin: auto;
+        width: 100%;
+    }
+    .add-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .add1{
+        width: 100%;
+        text-align: center;
+    }
+    .add2{
+        width: 100%;
+        text-align: center;
+    }
+    form input[type="text"]{
+        width: 50%;
+    }
+    form input[type="email"]{
+        width: 50%;
+    }
+    form input[type="number"]{
+        width: 50%;
+    }
+}
